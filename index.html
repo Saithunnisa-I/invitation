@@ -1,42 +1,153 @@
-<!DOCTYPE html><html>
+<!DOCTYPE html><html lang="en">
 <head>
-<title>Hussain ❤️ Nowshina</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahamed Shadhaf Hussain ❤️ Saithunnisa</title><style>
 body{
-font-family:Arial,sans-serif;
-background:#f8f3eb;
+margin:0;
+font-family:Georgia,serif;
+background:linear-gradient(135deg,#2d0710,#4a0e1a,#6d1023);
+color:white;
 text-align:center;
-padding:30px;
 }
-.card{
-max-width:700px;
-margin:auto;
-background:white;
-padding:30px;
-border-radius:15px;
-box-shadow:0 0 15px rgba(0,0,0,0.1);
+
+section{
+padding:70px 20px;
 }
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
 h1{
-color:#b8860b;
+font-size:3rem;
+color:#D4AF37;
 }
+
 h2{
-color:#444;
+color:#F5E6A9;
 }
-</style>
-</head>
-<body><div class="card"><h1>🤍 Nikah Invitation 🤍</h1><h2>Hussain ❤️ Nowshina</h2><p>
-With the blessings of Allah,
-we warmly invite you to our Nikah ceremony.
-</p><h3>Groom</h3>
-<p>Hussain</p>
-<p>Son of Afthaf & Jalal</p><h3>Bride</h3>
-<p>Nowshina</p>
-<p>Daughter of Nazimunnisa & Irshad</p><h3>Date</h3>
-<p>26 July 2026</p><h3>Time</h3>
-<p>11:00 AM</p><h3>Venue</h3>
-<p>Neyveli Community Hall</p><p>
-May Allah bless this marriage with love,
-mercy and barakah. Ameen.
-</p></div></body>
+
+.card{
+background:rgba(255,255,255,0.08);
+padding:25px;
+border-radius:20px;
+max-width:800px;
+margin:auto;
+}
+
+.gold{
+color:#D4AF37;
+}
+
+.countdown{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.box{
+background:rgba(255,255,255,0.1);
+padding:15px;
+border-radius:15px;
+min-width:80px;
+}
+
+.box span{
+display:block;
+font-size:2rem;
+font-weight:bold;
+color:#D4AF37;
+}
+
+footer{
+padding:30px;
+background:#1a0408;
+}
+</style></head><body><section class="hero">
+<h2>بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</h2><h1>AHAMED SHADHAF HUSSAIN</h1>
+<h2>❤️</h2>
+<h1>SAITHUNNISA</h1><p>With Allah's Blessings</p>
+</section><section>
+<div class="card">
+<h2>💍 Our Journey</h2>
+<p>Engaged on 26 November 2025</p>
+<p>A beautiful journey began with Allah's blessings and the love of our families.</p>
+</div>
+</section><section>
+<div class="card">
+<h2>👑 About the Groom</h2>
+<p>
+Ahamed Shadhaf Hussain is a sincere and kind-hearted person who values faith, family and meaningful relationships.
+</p><h2>🌸 About the Bride</h2>
+<p>
+Saithunnisa is a warm, cheerful and graceful soul whose positivity brightens every gathering.
+</p>
+</div>
+</section><section>
+<div class="card">
+<h2>⏳ Countdown to Our Nikah</h2><div class="countdown">
+<div class="box"><span id="days">0</span>Days</div>
+<div class="box"><span id="hours">0</span>Hours</div>
+<div class="box"><span id="minutes">0</span>Minutes</div>
+<div class="box"><span id="seconds">0</span>Seconds</div>
+</div>
+</div>
+</section><section>
+<div class="card">
+<h2>💌 Nikah Invitation</h2><p><b>Date:</b> 26 July 2026</p>
+<p><b>Time:</b> 11:00 AM</p>
+<p><b>Venue:</b> Community Hall, Block-24, Neyveli TS</p><p>
+Beloved Son of Ahmed Jalal & Afthaf Begam
+</p><p>
+Beloved Daughter of Irshad Ahamed & Nazimunnisa
+</p>
+</div>
+</section><section>
+<div class="card">
+<h2>📖 Quran Verse</h2><p>
+"And among His signs is that He created for you spouses from among yourselves that you may find tranquility in them; and He placed between you affection and mercy."
+</p><p>Surah Ar-Rum 30:21</p>
+</div>
+</section><section>
+<div class="card">
+<h2>🤍 Message From Friends</h2><p>
+May Allah bless your marriage with love, peace, happiness and endless barakah.
+</p>
+</div>
+</section><section>
+<div class="card">
+<h2>🤲 Dua</h2><p>
+May Allah unite your hearts in love and guide you both on the path of righteousness. Ameen.
+</p>
+</div>
+</section><footer>
+AHAMED SHADHAF HUSSAIN ❤️ SAITHUNNISA
+<br>
+26 July 2026
+</footer><script>
+const targetDate = new Date("July 26, 2026 11:00:00").getTime();
+
+setInterval(() => {
+const now = new Date().getTime();
+const distance = targetDate - now;
+
+document.getElementById("days").innerHTML =
+Math.floor(distance/(1000*60*60*24));
+
+document.getElementById("hours").innerHTML =
+Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+
+document.getElementById("minutes").innerHTML =
+Math.floor((distance%(1000*60*60))/(1000*60));
+
+document.getElementById("seconds").innerHTML =
+Math.floor((distance%(1000*60))/1000);
+},1000);
+</script></body>
 </html>
