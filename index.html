@@ -4,21 +4,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ahamed Shadhaf Hussain ❤️ Saithunnisa</title><style>
 body{
-  
 margin:0;
 font-family:Georgia,serif;
 background:linear-gradient(135deg,#2d0710,#4a0e1a,#6d1023);
 color:white;
 text-align:center;
 }
-  
-<audio id="bgMusic" autoplay loop>
-    <source src="music.mp3" type="audio/mpeg">
-</audio>
 
-<section class="hero">
-...
-</section>
 section{
 padding:70px 20px;
 }
@@ -78,16 +70,20 @@ padding:30px;
 background:#1a0408;
 }
 </style></head><body><section class="hero">
-<h2>بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</h2><h1>AHAMED SHADHAF HUSSAIN</h1>
+<h2>بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</h2><h1> 🤵Ahamed SHADHAF HUSSAIN</h1>
 <h2>❤️</h2>
-<h1>SAITHUNNISA</h1><p>With Allah's Blessings</p>
+<h1>🧕SAITHUNNISA</h1><p>With Allah's Blessings</p>
 </section><section>
 <div class="card">
 <h2>💍 Our Journey</h2>
 <p>Engaged on 26 November 2025</p>
 <p>A beautiful journey began with Allah's blessings and the love of our families.</p>
 </div>
-</section><section>
+</section>
+  <audio controls>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+  <section>
 <div class="card">
 <h2>👑 About the Groom</h2>
 <p>
@@ -157,8 +153,52 @@ Math.floor((distance%(1000*60*60))/(1000*60));
 document.getElementById("seconds").innerHTML =
 Math.floor((distance%(1000*60))/1000);
 },1000);
-  document.addEventListener("click", function () {
-  document.getElementById("bgMusic").play();
-}, { once: true });
-</script></body>
+</script>
+  <div class="hearts">
+  <span>❤️</span>
+  <span>❤️</span>
+  <span>❤️</span>
+  <span>❤️</span>
+  <span>❤️</span>
+</div>
+
+<style>
+.hearts{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  pointer-events:none;
+  overflow:hidden;
+}
+
+.hearts span{
+  position:absolute;
+  bottom:-50px;
+  font-size:25px;
+  animation:floatHeart 10s linear infinite;
+}
+
+.hearts span:nth-child(1){left:10%;animation-duration:8s;}
+.hearts span:nth-child(2){left:30%;animation-duration:12s;}
+.hearts span:nth-child(3){left:50%;animation-duration:10s;}
+.hearts span:nth-child(4){left:70%;animation-duration:14s;}
+.hearts span:nth-child(5){left:90%;animation-duration:9s;}
+
+@keyframes floatHeart{
+  0%{
+    transform:translateY(0) rotate(0deg);
+    opacity:0;
+  }
+  10%{
+    opacity:1;
+  }
+  100%{
+    transform:translateY(-110vh) rotate(360deg);
+    opacity:0;
+  }
+}
+</style>
+</body>
 </html>
