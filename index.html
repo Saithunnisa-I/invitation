@@ -1,214 +1,164 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nikkah Invitation</title>
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Georgia, serif;
-}
-
+<title>Ahamed Shadhaf Hussain ❤️ Saithunnisa</title><style>
 body{
-background:#f8f4f1;
-color:#5d4a4a;
+  
+margin:0;
+font-family:Georgia,serif;
+background:linear-gradient(135deg,#2d0710,#4a0e1a,#6d1023);
+color:white;
 text-align:center;
-overflow-x:hidden;
 }
+  
+<audio id="bgMusic" autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
 
+<section class="hero">
+...
+</section>
 section{
-padding:80px 20px;
+padding:70px 20px;
 }
 
 .hero{
-min-height:100vh;
+height:100vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
-background:linear-gradient(to bottom,#f8f4f1,#efe4e4);
 }
 
 h1{
 font-size:3rem;
-margin:15px 0;
+color:#D4AF37;
 }
 
 h2{
-font-size:2rem;
-margin-bottom:15px;
-}
-
-.names{
-font-size:2.8rem;
-line-height:1.5;
-}
-
-.date{
-font-size:2rem;
-margin-top:20px;
-}
-
-.countdown{
-font-size:2rem;
-font-weight:bold;
-margin-top:20px;
+color:#F5E6A9;
 }
 
 .card{
-background:white;
+background:rgba(255,255,255,0.08);
 padding:25px;
-margin:20px auto;
-max-width:600px;
-border-radius:15px;
-box-shadow:0 0 20px rgba(0,0,0,0.08);
+border-radius:20px;
+max-width:800px;
+margin:auto;
 }
 
-.btn{
-display:inline-block;
-padding:12px 25px;
-background:#8b6f74;
-color:white;
-text-decoration:none;
-border-radius:30px;
-margin-top:15px;
+.gold{
+color:#D4AF37;
 }
 
-.music-btn{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#8b6f74;
-color:white;
-border:none;
+.countdown{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.box{
+background:rgba(255,255,255,0.1);
 padding:15px;
-border-radius:50%;
-cursor:pointer;
-font-size:20px;
+border-radius:15px;
+min-width:80px;
 }
 
-.fade{
-opacity:0;
-transform:translateY(40px);
-transition:1s;
+.box span{
+display:block;
+font-size:2rem;
+font-weight:bold;
+color:#D4AF37;
 }
 
-.fade.show{
-opacity:1;
-transform:translateY(0);
+footer{
+padding:30px;
+background:#1a0408;
 }
-</style>
-</head>
-
-<body>
-
-<audio id="bgMusic" autoplay loop>
-<source src="music.mp3" type="audio/mpeg">
-</audio>
-
-<section class="hero">
-<p>بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
-<h2>With Allah's Blessings</h2>
-
-<div class="names">
-Ahamed Shadhaf Hussain<br>
-&<br>
-Saithunnisa
-</div>
-
-<div class="date">
-26 July 2026<br>
-Sunday • 11:00 AM
-</div>
-
-<div id="countdown" class="countdown"></div>
-</section>
-
-<section class="fade">
+</style></head><body><section class="hero">
+<h2>بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</h2><h1>AHAMED SHADHAF HUSSAIN</h1>
+<h2>❤️</h2>
+<h1>SAITHUNNISA</h1><p>With Allah's Blessings</p>
+</section><section>
 <div class="card">
-<h2>Nikkah Invitation</h2>
+<h2>💍 Our Journey</h2>
+<p>Engaged on 26 November 2025</p>
+<p>A beautiful journey began with Allah's blessings and the love of our families.</p>
+</div>
+</section><section>
+<div class="card">
+<h2>👑 About the Groom</h2>
 <p>
-We cordially invite you to join us and celebrate our Nikkah ceremony.
+Ahamed Shadhaf Hussain is a sincere and kind-hearted person who values faith, family and meaningful relationships.
+</p><h2>🌸 About the Bride</h2>
+<p>
+Saithunnisa is a warm, cheerful and graceful soul whose positivity brightens every gathering.
 </p>
 </div>
-</section>
-
-<section class="fade">
+</section><section>
 <div class="card">
-<h2>Venue</h2>
-
-<p>
-Block-24 Community Hall<br>
-Jawaharlal Nehru Rd,<br>
-Neyveli T.S, Tamil Nadu 607801
+<h2>⏳ Countdown to Our Nikah</h2><div class="countdown">
+<div class="box"><span id="days">0</span>Days</div>
+<div class="box"><span id="hours">0</span>Hours</div>
+<div class="box"><span id="minutes">0</span>Minutes</div>
+<div class="box"><span id="seconds">0</span>Seconds</div>
+</div>
+</div>
+</section><section>
+<div class="card">
+<h2>💌 Nikah Invitation</h2><p><b>Date:</b> 26 July 2026</p>
+<p><b>Time:</b> 11:00 AM</p>
+<p><b>Venue:</b> Community Hall, Block-24, Neyveli TS</p><p>
+Beloved Son of Ahmed Jalal & Afthaf Begam
+</p><p>
+Beloved Daughter of Irshad Ahamed & Nazimunnisa
 </p>
-
-<a class="btn"
-href="https://maps.google.com/?q=JG35+QCQ+Block-24+Community+Hall+Neyveli"
-target="_blank">
-Open Location
-</a>
-
 </div>
-</section>
-
-<section class="fade">
+</section><section>
 <div class="card">
-<h2>We look forward to celebrating with you</h2>
-<p>JazakAllahu Khairan</p>
+<h2>📖 Quran Verse</h2><p>
+"And among His signs is that He created for you spouses from among yourselves that you may find tranquility in them; and He placed between you affection and mercy."
+</p><p>Surah Ar-Rum 30:21</p>
 </div>
-</section>
-
-<button class="music-btn" onclick="toggleMusic()">♫</button>
-
-<script>
-
-const weddingDate =
-new Date("July 26, 2026 11:00:00").getTime();
+</section><section>
+<div class="card">
+<h2>🤍 Message From Friends</h2><p>
+May Allah bless your marriage with love, peace, happiness and endless barakah.
+</p>
+</div>
+</section><section>
+<div class="card">
+<h2>🤲 Dua</h2><p>
+May Allah unite your hearts in love and guide you both on the path of righteousness. Ameen.
+</p>
+</div>
+</section><footer>
+AHAMED SHADHAF HUSSAIN ❤️ SAITHUNNISA
+<br>
+26 July 2026
+</footer><script>
+const targetDate = new Date("July 26, 2026 11:00:00").getTime();
 
 setInterval(() => {
+const now = new Date().getTime();
+const distance = targetDate - now;
 
-let now = new Date().getTime();
+document.getElementById("days").innerHTML =
+Math.floor(distance/(1000*60*60*24));
 
-let distance = weddingDate - now;
+document.getElementById("hours").innerHTML =
+Math.floor((distance%(1000*60*60*24))/(1000*60*60));
 
-let days = Math.floor(distance/(1000*60*60*24));
-let hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
-let mins = Math.floor((distance%(1000*60*60))/(1000*60));
+document.getElementById("minutes").innerHTML =
+Math.floor((distance%(1000*60*60))/(1000*60));
 
-document.getElementById("countdown").innerHTML =
-days+" Days "+hours+" Hours "+mins+" Minutes";
-
+document.getElementById("seconds").innerHTML =
+Math.floor((distance%(1000*60))/1000);
 },1000);
-
-function toggleMusic(){
-let music=document.getElementById("bgMusic");
-
-if(music.paused){
-music.play();
-}
-else{
-music.pause();
-}
-}
-
-const observer=new IntersectionObserver(entries=>{
-entries.forEach(entry=>{
-if(entry.isIntersecting){
-entry.target.classList.add("show");
-}
-});
-});
-
-document.querySelectorAll(".fade").forEach(el=>{
-observer.observe(el);
-});
-
-</script>
-
-</body>
+  document.addEventListener("click", function () {
+  document.getElementById("bgMusic").play();
+}, { once: true });
+</script></body>
 </html>
